@@ -21,7 +21,7 @@ func main() {
 		// convert CRLF to LF
 		text = strings.Replace(text, "\n", "", -1)
 
-		client := openai.NewClient("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")
+		client := openai.NewClient("your token")
 		resp, err := client.CreateChatCompletion(
 			context.Background(),
 			openai.ChatCompletionRequest{
